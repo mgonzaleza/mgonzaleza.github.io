@@ -34,7 +34,7 @@
 <!-- Top icons -->
 <div class="top-icons">
 	<a class="top-menu hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Menu toggle"><span class="glyphicon glyphicon-th-list"></span></a>
-	<a href="#" class="top-download-resume hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Download resume"><span class="glyphicon glyphicon-cloud-download"></span></a>
+	<a href="mgonzalez-resume.pdf" class="top-download-resume hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Download resume"><span class="glyphicon glyphicon-cloud-download"></span></a>
 	<a class="top-contact hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Contact me"><span class="glyphicon glyphicon-send"></span></a>
 </div>
 <!-- end Top icons -->
@@ -47,7 +47,7 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#professional-skills">Skills</a></li>
         <li><a href="#interests">Interests</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li class="hidden"><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
@@ -372,7 +372,15 @@
                         <span class="note">Email</span>
                         <p><strong><a href="mailto:gonzalez.araya.mauricio@gmail.com">gonzalez.araya.mauricio@gmail.com</a></strong></p>
                         <hr class="empty">
-                        <form action="contact.php" method="post">
+												<a class="btn btn-success" href="mailto:gonzalez.araya.mauricio@gmail.com">
+													<span class="glyphicon glyphicon-send"></span>
+													Send me a message
+												</a>
+												<a class="btn btn-success" href="mgonzalez-resume.pdf">
+													<span class="glyphicon glyphicon-cloud-download"></span>
+													Download my CV
+												</a>
+                        <form action="contact.php" method="post" class="hidden">
                             <div class="form-group input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
                                 <input name="yourname" type="text" class="form-control" id="inputname" placeholder="Enter your name">
@@ -392,7 +400,7 @@
                             <button type="submit" class="btn btn-success pull-right"><span class="glyphicon glyphicon-send"></span> Send message</button>
                         </form>
                     </li>
-                    <li class="title up"><span class="glyphicon glyphicon-arrow-up"></span>Up</li>
+                    <li class="title up"><span class="glyphicon glyphicon-arrow-up"></span>Up You Go</li>
                 </ul>
             </div>
         </div>
